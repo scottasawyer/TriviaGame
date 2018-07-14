@@ -6,11 +6,15 @@ The page should allow you to push a button to start, push more buttons to answer
 
 Oh and the most frustrating image should display if you get an answer wrong (or at least one of the most frustrating images from my childhood.)
 
-# Rules of the Game
+## Rules of the Game
 * Press start to start the game.
 * You will have 10 seconds to answer each question, to answer you simply have to press the button that corresponds to what you think is correct.
 * The game will inform you of a right or wrong answer, as well as display the correct answer so you will not be left wondering.
 * Once all the questions have been answered or the timer has run out, your overall results will be displayed and you will have a chance to restart the game.
+
+## Installation
+1. `git clone` the repo.
+2. Open `index.html` in your favorite browser.
 
 # Homework Instructions
 
