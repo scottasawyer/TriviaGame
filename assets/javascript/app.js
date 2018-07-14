@@ -11,7 +11,7 @@ $(function () {
             correct: 3,
         },
         {
-            question: 'Who was the original name of the nemeis of Mario?',
+            question: 'Who was the original name of the nemesis of Mario?',
             answers: ['Bowser', 'King Koopa', 'Ludwig', 'Wario'],
             correct: 1,
         },
@@ -41,7 +41,7 @@ $(function () {
             correct: 1,
         },
         {
-            question: 'In A Boy and his Blod, what does the boy feed the blob?',
+            question: 'In A Boy and his Blob, what does the boy feed the blob?',
             answers: ['Spiders', 'Steak', 'Jelly Beans', 'Garbage'],
             correct: 2,
         },
@@ -79,11 +79,12 @@ $(function () {
         timer--;
 
 
-        if (timer < 1) {
+        if (timer < 0) {
             unanswered++; //unanswered goes up 1
             console.log(unanswered)
             stopTimer();
             $('.answers').empty();
+            $('.laugh').show();
             $('.timer').html('<p>Time is up!</p> <p>The Correct answer was ' + game[currentQuestion].answers[game[currentQuestion].correct] + "</p>");
             currentQuestion++;
             setTimeout(displayQuestion, 5000);
@@ -105,6 +106,7 @@ $(function () {
             var q = game[currentQuestion].question;
             $('.questions').html(q);
             startTimer();
+            $('.laugh').hide();
             var answer = game[currentQuestion].answers;
             for (i = 0; i < answer.length; i++) {
                 console.log(answer[i])
@@ -162,7 +164,7 @@ $(function () {
             $('.timer').empty();
             $('.answers').empty();
             $('.timer').html('Game Over').addClass('gameOver');
-            $('.results').html('<p>You answered ' + right + ' correctly!</p><p>You answered ' + wrong + ' wrong!</p><p>You did not answer ' + unanswered + ' questions.</p><p>What? Was 10 seconds was not enough time?!?</p>')
+            $('.results').html('<p>You answered ' + right + ' correctly!</p><p>You answered ' + wrong + ' wrong!</p><p>You did not answer ' + unanswered + ' questions.</p><p>What? Was 10 seconds not enough time?!?</p>')
             $('.reset').show();
             return true;
         }
