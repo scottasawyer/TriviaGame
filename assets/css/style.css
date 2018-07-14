@@ -1,0 +1,66 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    background-image: url("../images/background.gif");
+    font-family: 'Press Start 2P', cursive;
+}
+
+.jumbotron {
+    background: black;
+    text: white;
+    border-style: dotted;
+    border-color: green;
+    border-width: 3px;
+    padding: 3px;
+}
+
+
+.questions {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.answers {
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    cursor: pointer;
+    text-align: center;
+}
+
+.current {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.button {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background: black;
+}
+
+.button:hover {
+    font-weight: bold;
+    color:black;
+    background-color: white;
+    box-shadow: 10px 10px grey;
+}
+
+.btn:hover {
+    box-shadow: 10px 10px grey;
+}
+
+.timer {
+    position: relative;
+    text-align: center;
+}
+
+.gameOver {
+    font-size: 25px;
+}

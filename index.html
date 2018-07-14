@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <title>NES Trivia</title>
+</head>
+
+<body>
+    <div class="container success">
+        <div class="row">
+            <div class="jumbotron rounded">
+                <h1 class="display-4">Classic NES Trivia!</h1>
+                <p class="lead">Let's test your knowlegde of the classic Nintendo Entertainment System and its games.</p>
+                <hr class="my-4">
+                <p class="lead">
+                    <a class="btn btn-success btn-lg start" role="button">Start Game!</a>
+                </p>
+                <p class="lead">
+                    <a class="btn btn-danger btn-lg reset fresh" role="button">Reset</a>
+                <p class="timer"></p>
+            </div>
+        </div>
+
+        <div class="row jumbotron quiz fresh">
+            <div class="col">
+                <div class="questions row"></div>
+                <div class="answers rounded row"></div>
+                <div class="results row"></div>
+                <div class="current"></div>
+                <div class="image row"><img class="triforce fresh" src="./assets/images/link.gif" height="200" width="200"><img class = "laugh fresh" src="./assets/images/laugh.gif" height="200" width="200">
+            </div>
+        </div>
+
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/javascript/app.js"></script>
+</body>
+
+</html>
